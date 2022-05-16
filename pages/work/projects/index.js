@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Resume</title>
-        <meta name="description" content="My resume" />
+        <title>Projects</title>
+        <meta name="description" content="All my previous, current or future projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to the Resume section !</h1>
+        <h1 className={styles.title}>Welcome to the Projects section !</h1>
 
         <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/about/resume.js</code>
+          Get started by editing <code className={styles.code}>pages/work/projects/index.js</code>
         </p>
       </main>
 
