@@ -44,7 +44,7 @@ export default function Home() {
         </section>
         <section>
           <h2>PROFESSIONAL EXPERIENCE</h2>
-          <h3>Fullstack Developer Gatsby, Serverless</h3>
+          <h3>Fullstack Developer Gatsby & serverless (Freelance project)</h3>
           <div>
             <p>
               <strong>
