@@ -1,24 +1,23 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 export default function Creations() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Creations</title>
         <meta name="description" content="Here you can dive into my creative mind" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to the Creations section !</h1>
+      <main>
+        <h1>Welcome to the Creations section !</h1>
 
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/work/creations.js</code>
+        <p>
+          Get started by editing <code>pages/work/creations.js</code>
         </p>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <p>Powered by JAMstack and Spooky Umi</p>
       </footer>
     </div>
