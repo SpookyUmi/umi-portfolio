@@ -1,15 +1,18 @@
+@use 'vars';
+
 .container {
   padding: 0 2rem;
 }
 
 .main {
+  display: block;
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main h1 {
+  text-align: center;
 }
 
 .footer {
@@ -51,8 +54,6 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
   font-size: 1.5rem;
 }
 
@@ -108,9 +109,70 @@
   margin-left: 0.5rem;
 }
 
+.second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  font-weight: bold;
+  &--pink {
+    background-color: vars.$color-pink;
+  }
+  &--orange {
+    background-color: vars.$color-orange;
+  }
+  &--sun {
+    background-color: vars.$color-sun;
+  }
+  &--lavender {
+    background-color: vars.$color-lavender;
+  }
+  &--blue {
+    background-color: vars.$color-blue;
+  }
+  &--sand {
+    background-color: vars.$color-sand;
+  }
+  &--yellow {
+    background-color: vars.$color-yellow;
+  }
+  &--lightpink {
+    background-color: vars.$color-lightpink;
+  }
+  &--beige {
+    background-color: vars.$color-beige;
+  }
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  &_img {
+    width: 100px;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .second {
+    display: block;
   }
 }

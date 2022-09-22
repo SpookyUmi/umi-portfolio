@@ -1,0 +1,42 @@
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: vars.$font-text;
+  color: vars.$color-secondary;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1, h2 {
+  font-family: vars.$font-title;
+  color: vars.$color-primary;
+}
+
+h3 {
+  color: vars.$color-third;
+  background-color: vars.$color-background;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: -8px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+* {
+  box-sizing: border-box;
+}
