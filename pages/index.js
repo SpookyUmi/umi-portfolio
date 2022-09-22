@@ -102,6 +102,7 @@ export default function Home() {
           <h2>HARD SKILLS</h2>
           <ul>
             <li>HTML5, CSS3, Sass, TailwindCSS</li>
+            <li>Responsive Web Design, UI/UX</li>
             <li>JavaScript ES6+, React & Redux, React Native</li>
             <li>Node.js, Axios, Express, EJS</li>
             <li>PostgreSQL & MongoDB</li>
