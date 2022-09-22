@@ -1,4 +1,5 @@
 @use 'vars';
+@use 'reset';
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
@@ -8,6 +9,16 @@ body {
   margin: 0;
   font-family: vars.$font-text;
   color: vars.$color-secondary;
+  line-height: 1.3;
+}
+
+ul {
+  margin: 0.5rem 0;
+}
+
+li {
+  margin-left: 2rem;
+  list-style-type: circle;
 }
 
 a {
@@ -20,11 +31,14 @@ h1 {
 }
 
 h1, h2 {
+  margin: 1rem 0;
   font-family: vars.$font-title;
   color: vars.$color-primary;
 }
 
 h3 {
+  font-weight: bold;
+  margin: 1rem 0;
   color: vars.$color-third;
   background-color: vars.$color-background;
   padding: 0.5rem 1rem;
