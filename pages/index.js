@@ -115,7 +115,7 @@ export default function Home() {
         <article>
           <h2>SOFT SKILLS</h2>
           <p>
-            I&apos;m a <strong>creative</strong> and <strong>atypical</strong> person (ADHD). I&apos;m
+            I&apos;m a <strong>creative</strong> and <strong>neurodivergent</strong> person. I&apos;m
             dedicated & <strong>enthusiastic</strong> about learning new things, especially regarding{" "}
             <strong>web development</strong> and <strong>art</strong> (drawing and painting). I love to work
             in a <strong>team</strong> but I also need to be <strong>independent</strong>. I try to be{" "}
