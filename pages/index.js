@@ -50,12 +50,6 @@ export default function Home() {
                 <strong>→ Opquast certification (820pts) :</strong> Quality Web practices <br />{" "}
                 <strong>→ Web & Web mobile professional certification</strong>
               </p>
-              <h3>Mentoring with an experimented developer - March 2020 to August 2020</h3>
-              <ul>
-                <li>Basics : HTML5, CSS3</li>
-                <li>Wes Bos&apos; courses : Flexbox, Grid, Beginner JavaScript</li>
-                <li>Linux</li>
-              </ul>
               <h3>Speech Therapy - CFUOB (FR), September 2017 to April 2020</h3>
               <ul>
                 <li>3 years of Speech therapy classes and internships</li>
@@ -236,13 +230,7 @@ export default function Home() {
                 <strong>→ Certification Opquast (820pts) :</strong> Bonnes pratiques Web <br />{" "}
                 <strong>→ Certification professionnelle Développeur Web & Web mobile</strong>
               </p>
-              <h3>Mentoring avec un développeur expérimenté - Mars 2020 à Août 2020</h3>
-              <ul>
-                <li>Bases : HTML5, CSS3</li>
-                <li>Cours en ligne de Wes Bos : Flexbox, Grid, Beginner JavaScript</li>
-                <li>Linux</li>
-              </ul>
-              <h3>Orthophonie - CFUOB, Septembre 2017 à Avril 2020</h3>
+              <h3>École d&apos;Orthophonie - CFUOB, Septembre 2017 à Avril 2020</h3>
               <ul>
                 <li>
                   3 ans d&apos;études d&apos;Orthophonie et de stages professionnels en écoles maternelle &
