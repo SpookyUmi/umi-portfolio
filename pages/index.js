@@ -142,6 +142,17 @@ export default function Home() {
                 <strong>independent</strong>. I try to be <strong>better</strong> everyday, both in my work
                 and personal life.
               </p>
+              <h2>I LIKE...</h2>
+              <div className="hobbies">
+                <p className="tag tag--yellow">Drawing & painting</p>
+                <p className="tag tag--blue">Photography</p>
+                <p className="tag tag--pink">Nature & animals</p>
+                <p className="tag tag--orange">Running</p>
+                <p className="tag tag--lavender">Playing video games</p>
+                <p className="tag tag--sun">Reading</p>
+                <p className="tag tag--sand">Cooking & baking</p>
+                <p className="tag tag--beige">Witchy things</p>
+              </div>
             </article>
             <article>
               <h2>HARD SKILLS</h2>
@@ -162,19 +173,6 @@ export default function Home() {
                 <li>Netlify, Heroku, Clever Cloud</li>
                 <li>Electron</li>
               </ul>
-            </article>
-            <article>
-              <h2>I LIKE...</h2>
-              <div className="hobbies">
-                <p className="tag tag--yellow">Drawing & painting</p>
-                <p className="tag tag--blue">Photography</p>
-                <p className="tag tag--pink">Nature & animals</p>
-                <p className="tag tag--orange">Running</p>
-                <p className="tag tag--lavender">Playing video games</p>
-                <p className="tag tag--sun">Reading</p>
-                <p className="tag tag--sand">Cooking & baking</p>
-                <p className="tag tag--beige">Witchy things</p>
-              </div>
             </article>
             <article>
               <h2>CONTACT</h2>
@@ -332,9 +330,20 @@ export default function Home() {
                 être en <strong>autonomie</strong>. Je tente de m&apos;améliorer chaque jour, à la fois au
                 travail et dans ma vie personnelle.
               </p>
+              <h2>J&apos;AIME...</h2>
+              <div className="hobbies">
+                <p className="tag tag--yellow">Dessiner & peindre</p>
+                <p className="tag tag--blue">La photographie</p>
+                <p className="tag tag--pink">La nature & les animaux</p>
+                <p className="tag tag--orange">Courir</p>
+                <p className="tag tag--lavender">Les jeux vidéos</p>
+                <p className="tag tag--sun">Lire un bon livre</p>
+                <p className="tag tag--sand">Cuisiner et pâtisser</p>
+                <p className="tag tag--beige">Witchy things</p>
+              </div>
             </article>
             <article>
-              <h2>COMPÉTENCES HUMAINES & TECHNIQUES</h2>
+              <h2>COMPÉTENCES</h2>
               <ul>
                 <li>Travail en équipe</li>
                 <li>Précision ; Organisation</li>
@@ -347,24 +356,10 @@ export default function Home() {
                 <li>JavaScript ES6+, React & Redux, React Native, TypeScript</li>
                 <li>Node.js, Axios, Express, EJS</li>
                 <li>PostgreSQL & MongoDB</li>
-                <li>Linux, Git flow & GitHub</li>
                 <li>Webpack, Vite</li>
                 <li>Netlify, Heroku, Clever Cloud</li>
                 <li>Electron</li>
               </ul>
-            </article>
-            <article>
-              <h2>J&apos;AIME...</h2>
-              <div className="hobbies">
-                <p className="tag tag--yellow">Dessiner & peindre</p>
-                <p className="tag tag--blue">La photographie</p>
-                <p className="tag tag--pink">La nature & les animaux</p>
-                <p className="tag tag--orange">Courir</p>
-                <p className="tag tag--lavender">Les jeux vidéos</p>
-                <p className="tag tag--sun">Lire un bon livre</p>
-                <p className="tag tag--sand">Cuisiner et pâtisser</p>
-                <p className="tag tag--beige">Witchy things</p>
-              </div>
             </article>
             <article>
               <h2>CONTACT</h2>
