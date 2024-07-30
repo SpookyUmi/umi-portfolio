@@ -245,8 +245,8 @@ export default function Home() {
               <h3>Orthophonie - CFUOB, Septembre 2017 à Avril 2020</h3>
               <ul>
                 <li>
-                  3 ans d&apos;études d&apos;Orthophonie et de stages professionnels en écoles maternelles,
-                  primaires, collège, ainsi qu&apos;en instituts spécialisés.
+                  3 ans d&apos;études d&apos;Orthophonie et de stages professionnels en écoles maternelle &
+                  primaire, au collège, ainsi qu&apos;en instituts spécialisés.
                 </li>
               </ul>
             </section>
