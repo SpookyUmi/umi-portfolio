@@ -78,7 +78,7 @@ export default function Home() {
                 <li>Implementation of the main visual evolutions of COGS</li>
                 <li>Coming up with coherent UX/UI decisions</li>
               </ul>
-              <h3>Fullstack Developer Gatsby & serverless (Freelance project)</h3>
+              <h3>Fullstack Developer Gatsby</h3>
               <div>
                 <p>
                   <strong>
@@ -267,7 +267,7 @@ export default function Home() {
                 <li>Implémentation des principales évolutions visuelles du logiciel COGS</li>
                 <li>Prises de décision UI/UX cohérentes avec le projet</li>
               </ul>
-              <h3>Développeuse Fullstack Gatsby & serverless (projet en Freelance)</h3>
+              <h3>Développeuse Fullstack Gatsby</h3>
               <div>
                 <p>
                   <strong>
