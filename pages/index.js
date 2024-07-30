@@ -325,10 +325,10 @@ export default function Home() {
               <p>
                 Je suis une personne <strong>créative</strong>. Je suis <strong>enthousiaste</strong> à
                 l&apos;idée d&apos;apprendre de nouvelles choses, notamment lorsqu&apos;il s&apos;agit d&apos;
-                <strong>arts visuels</strong> (dessin, peinture & photographie) et de culture (livres, films,
-                musique...). J&apos;apprécie travailler en <strong>équipe</strong> & j&apos;apprécie également
-                être en <strong>autonomie</strong>. Je tente de m&apos;améliorer chaque jour, à la fois au
-                travail et dans ma vie personnelle.
+                <strong>arts visuels</strong> (dessin, peinture & photographie) et de <strong>culture</strong>{" "}
+                (livres, films, musique...). J&apos;apprécie travailler en <strong>équipe</strong> &
+                j&apos;apprécie également être en <strong>autonomie</strong>. Je tente de m&apos;améliorer
+                chaque jour, à la fois au travail et dans ma vie personnelle.
               </p>
               <h2>J&apos;AIME...</h2>
               <div className="hobbies">
