@@ -1,8 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
 import sakura from "../static/sakura_tree.svg";
+import { useCallback, useState } from "react";
 
 export default function Home() {
+  const [currentLanguage, setCurrentLanguage] = useState("eng");
+
+  const switchLanguage = useCallback(() => {
+    setCurrentLanguage(currentLanguage === "eng" ? "fr" : "eng");
+  }, [currentLanguage]);
+
   return (
     <div className="container">
       <Head>
@@ -11,158 +18,388 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
-      <main className="main">
-        <h1>CHLOÉ DANISEVICIUS</h1>
-
-        <p className="description">
-          <code>fullstack web developer</code>
-        </p>
-
-        <section>
-          <h2>EDUCATION</h2>
-          <h3>Fullstack JS program - O&apos;Clock, August 2020 to February 2021</h3>
-          <ul>
-            <li>HTML5, CSS3, JavaScript, Node.js, Express, SQL, OOP</li>
-            <li>SSH, Git Flow, UNIX & its CLI</li>
-            <li>Conception team work : Agile, wireframes, user stories, deploy</li>
-            <li>Specialisation : React & Redux</li>
-          </ul>
-          <p>
-            <strong>→ Opquast certification (820pts) :</strong> Quality Web practices <br />{" "}
-            <strong>→ Web & Web mobile professional certification</strong>
-          </p>
-          <h3>Mentoring with an experimented developer - March 2020 to August 2020</h3>
-          <ul>
-            <li>Basics : HTML5, CSS3</li>
-            <li>Wes Bos&apos; courses : Flexbox, Grid, Beginner JavaScript</li>
-            <li>Linux</li>
-          </ul>
-          <h3>Speech Therapy - CFUOB (FR), September 2017 to April 2020</h3>
-          <ul>
-            <li>3 years of Speech therapy classes and internships</li>
-          </ul>
-        </section>
-        <section>
-          <h2>PROFESSIONAL EXPERIENCE</h2>
-          <h3>Fullstack Developer Gatsby & serverless (Freelance project)</h3>
-          <div>
-            <p>
-              <strong>
-                <a href="https://bebeaupaysdusommeil.com" target="_blank" rel="noopener noreferrer">
-                  Bébé au Pays du Sommeil
-                </a>
-              </strong>{" "}
-              - August 2022 to September 2022
-            </p>
-          </div>
-          <ul>
-            <li>Implementation of Stripe Elements</li>
-            <li>Netlify&apos;s serverless functions</li>
-            <li>Use of Sendgrid</li>
-          </ul>
-          <h3>Fullstack Developer React & React Native, Node.js</h3>
-          <p>
-            <strong>
-              <a href="https://www.le-stud.com/" target="_blank" rel="noopener noreferrer">
-                Le Stud
-              </a>{" "}
-              (formerly called Selego)
-            </strong>{" "}
-            - May 2021 to July 2022
-          </p>
-          <ul>
-            <li>
-              Learned React Native on{" "}
-              <a href="https://moneywalkie.com/" target="_blank" rel="noopener noreferrer">
-                MoneyWalkie
-              </a>
-            </li>
-            <li>
-              NodeJS, React, REST APIs, MongoDB, SysAdmin on OVH on{" "}
-              <a href="https://www.snu.gouv.fr/" target="_blank" rel="noopener noreferrer">
-                SNU
-              </a>
-            </li>
-          </ul>
-          <h3>Frontend Developer React - Product Owner</h3>
-          <div>
-            <p>
-              <strong>O&apos;Clock Final Project :</strong>{" "}
-              <a href="https://ofourneaux.xyz" target="_blank" rel="noopener noreferrer">
-                O&apos;Fourneaux
-              </a>{" "}
-              (only the Front part is still available because of Heroku&apos;s fee update) - January 2021 to
-              February 2021
-            </p>
-          </div>
-        </section>
-      </main>
-      <section className="second">
-        <article>
-          <h2>HARD SKILLS</h2>
-          <ul>
-            <li>HTML5, CSS3, Sass, TailwindCSS</li>
-            <li>Responsive Web Design, UI/UX</li>
-            <li>JavaScript ES6+, React & Redux, React Native</li>
-            <li>Node.js, Axios, Express, EJS</li>
-            <li>PostgreSQL & MongoDB</li>
-            <li>Linux, Git flow & GitHub</li>
-            <li>Webpack</li>
-            <li>Netlify, Heroku, Clever Cloud</li>
-            <li>VueJS : currently learning</li>
-          </ul>
-        </article>
-        <article>
-          <h2>SOFT SKILLS</h2>
-          <p>
-            I&apos;m a <strong>creative</strong> and <strong>neurodivergent</strong> person. I&apos;m
-            dedicated & <strong>enthusiastic</strong> about learning new things, especially regarding{" "}
-            <strong>web development</strong> and <strong>art</strong> (drawing and painting). I love to work
-            in a <strong>team</strong> but I also need to be <strong>independent</strong>. I try to be{" "}
-            <strong>better</strong> everyday, both in my work and personal life.
-          </p>
-        </article>
-        <article>
-          <h2>HOBBIES</h2>
-          <div className="hobbies">
-            <p className="tag tag--pink">Nature & animals</p>
-            <p className="tag tag--orange">Sports</p>
-            <p className="tag tag--sun">Cuddling my cats</p>
-            <p className="tag tag--lavender">ACNH</p>
-            <p className="tag tag--blue">Singing & music</p>
-            <p className="tag tag--sand">Cooking & baking</p>
-            <p className="tag tag--yellow">Drawing & painting</p>
-            <p className="tag tag--beige">Hollow Knight</p>
-          </div>
-        </article>
-        <article>
-          <h2>CONTACT</h2>
-          <div className="contact">
-            <Image width="100" height="100" src={sakura} alt="sakura tree icon" />
-            <ul>
-              <li>
-                <a href="mailto:spookyumi.dev@gmail.com">spookyumi.dev@gmail.com</a>
-              </li>
-              <li>
-                <a href="https://github.com/SpookyUmi" target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/spookyumi/" target="_blank" rel="noopener noreferrer">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="https://spookyumi.dev" target="_blank" rel="noopener noreferrer">
-                  My old portfolio
-                </a>{" "}
-                (the new one&apos;s in progress !)
-              </li>
-            </ul>
-          </div>
-        </article>
+      <h1>CHLOÉ DANISEVICIUS</h1>
+      <section className="buttonContainer">
+        <button onClick={switchLanguage}>Translate/Traduire</button>
       </section>
+      {currentLanguage === "eng" ? (
+        <>
+          <main className="main">
+            <p className="description">
+              <code>fullstack web developer & creative mind</code>
+            </p>
+
+            <section>
+              <h2>EDUCATION</h2>
+              <h3>Self-taught artist</h3>
+              <p>
+                I start drawing and expressing myself through visual arts at a young age. After following a
+                few art lessons in my childhood, I keep creating visual pieces throughout the years.
+                Currently, I go back to the basics and practice again all the technical skills that are needed
+                to create a complete art piece. I also love practicing and experimenting with watercolour,
+                digital drawing with Procreate, and photography.
+              </p>
+              <h3>Fullstack JS program - O&apos;Clock, August 2020 to February 2021</h3>
+              <ul>
+                <li>HTML5, CSS3, JavaScript, Node.js, Express, SQL, OOP</li>
+                <li>SSH, Git Flow, UNIX & its CLI</li>
+                <li>Conception team work : Agile, wireframes, user stories, deploy</li>
+                <li>Specialisation : React & Redux</li>
+              </ul>
+              <p>
+                <strong>→ Opquast certification (820pts) :</strong> Quality Web practices <br />{" "}
+                <strong>→ Web & Web mobile professional certification</strong>
+              </p>
+              <h3>Mentoring with an experimented developer - March 2020 to August 2020</h3>
+              <ul>
+                <li>Basics : HTML5, CSS3</li>
+                <li>Wes Bos&apos; courses : Flexbox, Grid, Beginner JavaScript</li>
+                <li>Linux</li>
+              </ul>
+              <h3>Speech Therapy - CFUOB (FR), September 2017 to April 2020</h3>
+              <ul>
+                <li>3 years of Speech therapy classes and internships</li>
+              </ul>
+            </section>
+            <section>
+              <h2>PROFESSIONAL EXPERIENCE</h2>
+              <h3>Software Developer React & TypeScript on COGS</h3>
+              <div>
+                <p>
+                  <strong>
+                    <a href="https://www.clockwork.dog/" target="_blank" rel="noopener noreferrer">
+                      Clockwork Dog
+                    </a>
+                  </strong>{" "}
+                  - Started in January 2023, current position
+                </p>
+              </div>
+              <ul>
+                <li>Implementation of the main visual evolutions of COGS</li>
+                <li>Coming up with coherent UX/UI decisions</li>
+              </ul>
+              <h3>Fullstack Developer Gatsby & serverless (Freelance project)</h3>
+              <div>
+                <p>
+                  <strong>
+                    <a href="https://bebeaupaysdusommeil.com" target="_blank" rel="noopener noreferrer">
+                      Bébé au Pays du Sommeil
+                    </a>
+                  </strong>{" "}
+                  - August 2022 to September 2022
+                </p>
+              </div>
+              <ul>
+                <li>Implementation of Stripe Elements</li>
+                <li>Netlify&apos;s serverless functions</li>
+                <li>Use of Sendgrid</li>
+              </ul>
+              <h3>Fullstack Developer React & React Native, Node.js</h3>
+              <p>
+                <strong>
+                  <a href="https://www.le-stud.com/" target="_blank" rel="noopener noreferrer">
+                    Le Stud
+                  </a>{" "}
+                  (formerly called Selego)
+                </strong>{" "}
+                - May 2021 to July 2022
+              </p>
+              <ul>
+                <li>
+                  Learned React Native on{" "}
+                  <a href="https://moneywalkie.com/" target="_blank" rel="noopener noreferrer">
+                    MoneyWalkie
+                  </a>
+                </li>
+                <li>
+                  NodeJS, React, REST APIs, MongoDB, SysAdmin on OVH on{" "}
+                  <a href="https://www.snu.gouv.fr/" target="_blank" rel="noopener noreferrer">
+                    SNU
+                  </a>
+                </li>
+              </ul>
+              <h3>Frontend Developer React - Product Owner</h3>
+              <div>
+                <p>
+                  <strong>O&apos;Clock Final Project :</strong>{" "}
+                  <a href="https://ofourneaux.xyz" target="_blank" rel="noopener noreferrer">
+                    O&apos;Fourneaux
+                  </a>{" "}
+                  (only the Front part is still available because of Heroku&apos;s fee update) - January 2021
+                  to February 2021
+                </p>
+              </div>
+            </section>
+          </main>
+          <section className="second">
+            <article>
+              <h2>SOFT SKILLS</h2>
+              <p>
+                I&apos;m a <strong>creative</strong> person. I&apos;m dedicated &{" "}
+                <strong>enthusiastic</strong> about learning new things, especially regarding{" "}
+                <strong>visual arts</strong> (drawing, painting & photography) and culture (books, movies,
+                music...). I love to work in a <strong>team</strong> & I also like to be{" "}
+                <strong>independent</strong>. I try to be <strong>better</strong> everyday, both in my work
+                and personal life.
+              </p>
+            </article>
+            <article>
+              <h2>HARD SKILLS</h2>
+              <ul>
+                <li>Teamwork</li>
+                <li>Precision ; Organisation</li>
+                <li>Good listener ; Good adviser</li>
+                <li>Art knowledge</li>
+                <li>Good culture ; Well read</li>
+                <li>Fluent in English</li>
+                <li>HTML5, CSS3, Sass, TailwindCSS</li>
+                <li>Responsive Web Design, UI/UX</li>
+                <li>JavaScript ES6+, React & Redux, React Native, TypeScript</li>
+                <li>Node.js, Axios, Express, EJS</li>
+                <li>PostgreSQL & MongoDB</li>
+                <li>Linux, Git flow & GitHub</li>
+                <li>Webpack, Vite</li>
+                <li>Netlify, Heroku, Clever Cloud</li>
+                <li>Electron</li>
+              </ul>
+            </article>
+            <article>
+              <h2>I LIKE...</h2>
+              <div className="hobbies">
+                <p className="tag tag--yellow">Drawing & painting</p>
+                <p className="tag tag--blue">Photography</p>
+                <p className="tag tag--pink">Nature & animals</p>
+                <p className="tag tag--orange">Running</p>
+                <p className="tag tag--lavender">Playing video games</p>
+                <p className="tag tag--sun">Reading</p>
+                <p className="tag tag--sand">Cooking & baking</p>
+                <p className="tag tag--beige">Witchy things</p>
+              </div>
+            </article>
+            <article>
+              <h2>CONTACT</h2>
+              <div className="contact">
+                <Image width="100" height="100" src={sakura} alt="sakura tree icon" />
+                <ul>
+                  <li>
+                    <a href="mailto:chloe.danisevicius@gmail.com">chloe.danisevicius@gmail.com</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SpookyUmi" target="_blank" rel="noopener noreferrer">
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/spookyumi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://spookyumi.dev" target="_blank" rel="noopener noreferrer">
+                      My old portfolio
+                    </a>{" "}
+                    (the new one&apos;s in progress !)
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+        </>
+      ) : (
+        <>
+          <main className="main">
+            <p className="description">
+              <code>développeuse web fullstack & esprit créatif</code>
+            </p>
+
+            <section>
+              <h2>FORMATIONS</h2>
+              <h3>Artiste auto-didacte</h3>
+              <p>
+                Je commence à dessiner et à m&apos;exprimer à l&apos;aide des arts visuels très tôt. Après
+                avoir suivi quelques cours d&apos;art dans mon enfance, je continue à créer des pièces
+                visuelles au fil des années. Actuellement, je reprends les bases et pratique à nouveau toutes
+                les compétences techniques nécessaires pour créer une oeuvre de A à Z. J&apos;aime aussi
+                pratiquer et expérimenter avec l&apos;aquarelle, le dessin digital avec Procreate, et la
+                photographie.
+              </p>
+              <h3>Programme Fullstack JS - O&apos;Clock, Août 2020 à Février 2021</h3>
+              <ul>
+                <li>HTML5, CSS3, JavaScript, Node.js, Express, SQL, OOP</li>
+                <li>SSH, Git Flow, UNIX & its CLI</li>
+                <li>Conception, travail en équipe : Agile, wireframes, user stories, deploy</li>
+                <li>Spécialisation : React & Redux</li>
+              </ul>
+              <p>
+                <strong>→ Certification Opquast (820pts) :</strong> Bonnes pratiques Web <br />{" "}
+                <strong>→ Certification professionnelle Développeur Web & Web mobile</strong>
+              </p>
+              <h3>Mentoring avec un développeur expérimenté - Mars 2020 à Août 2020</h3>
+              <ul>
+                <li>Bases : HTML5, CSS3</li>
+                <li>Cours en ligne de Wes Bos : Flexbox, Grid, Beginner JavaScript</li>
+                <li>Linux</li>
+              </ul>
+              <h3>Orthophonie - CFUOB, Septembre 2017 à Avril 2020</h3>
+              <ul>
+                <li>
+                  3 ans d&apos;études d&apos;Orthophonie et de stages professionnels en écoles maternelles,
+                  primaires, collège, ainsi qu&apos;en instituts spécialisés.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>EXPERIENCE PROFESSIONELLE</h2>
+              <h3>Développeuse Logiciel React & TypeScript</h3>
+              <div>
+                <p>
+                  <strong>
+                    <a href="https://www.clockwork.dog/" target="_blank" rel="noopener noreferrer">
+                      Clockwork Dog
+                    </a>
+                  </strong>{" "}
+                  - Débuté en Janvier 2023, position actuelle
+                </p>
+              </div>
+              <ul>
+                <li>Implémentation des principales évolutions visuelles du logiciel COGS</li>
+                <li>Prises de décision UI/UX cohérentes avec le projet</li>
+              </ul>
+              <h3>Développeuse Fullstack Gatsby & serverless (projet en Freelance)</h3>
+              <div>
+                <p>
+                  <strong>
+                    <a href="https://bebeaupaysdusommeil.com" target="_blank" rel="noopener noreferrer">
+                      Bébé au Pays du Sommeil
+                    </a>
+                  </strong>{" "}
+                  - Août 2022 à Septembre 2022
+                </p>
+              </div>
+              <ul>
+                <li>Implémentation de Stripe Elements</li>
+                <li>Usage des fonctions serverless de Netlify</li>
+                <li>Usage de Sendgrid</li>
+              </ul>
+              <h3>Développeuse Fullstack React & React Native, Node.js</h3>
+              <p>
+                <strong>
+                  <a href="https://www.le-stud.com/" target="_blank" rel="noopener noreferrer">
+                    Le Stud
+                  </a>{" "}
+                  (Anciennement Selego)
+                </strong>{" "}
+                - Mai 2021 à Juillet 2022
+              </p>
+              <ul>
+                <li>
+                  Apprentissage de React Native sur{" "}
+                  <a href="https://moneywalkie.com/" target="_blank" rel="noopener noreferrer">
+                    MoneyWalkie
+                  </a>
+                </li>
+                <li>
+                  NodeJS, React, REST APIs, MongoDB et OVH sur le{" "}
+                  <a href="https://www.snu.gouv.fr/" target="_blank" rel="noopener noreferrer">
+                    SNU
+                  </a>
+                </li>
+              </ul>
+              <h3>Développeuse React Frontend - Product Owner</h3>
+              <div>
+                <p>
+                  <strong>Projet final d&apos;O&apos;Clock :</strong>{" "}
+                  <a href="https://ofourneaux.xyz" target="_blank" rel="noopener noreferrer">
+                    O&apos;Fourneaux
+                  </a>{" "}
+                  Janvier 2021 à Février 2021
+                </p>
+              </div>
+            </section>
+          </main>
+          <section className="second">
+            <article>
+              <h2>QUI JE SUIS</h2>
+              <p>
+                Je suis une personne <strong>créative</strong>. Je suis <strong>enthousiaste</strong> à
+                l&apos;idée d&apos;apprendre de nouvelles choses, notamment lorsqu&apos;il s&apos;agit d&apos;
+                <strong>arts visuels</strong> (dessin, peinture & photographie) et de culture (livres, films,
+                musique...). J&apos;apprécie travailler en <strong>équipe</strong> & j&apos;apprécie également
+                être en <strong>autonomie</strong>. Je tente de m&apos;améliorer chaque jour, à la fois au
+                travail et dans ma vie personnelle.
+              </p>
+            </article>
+            <article>
+              <h2>COMPÉTENCES HUMAINES & TECHNIQUES</h2>
+              <ul>
+                <li>Travail en équipe</li>
+                <li>Précision ; Organisation</li>
+                <li>Bonne écoute ; Bonne conseillère</li>
+                <li>Connaissances à propos de l&apos;art</li>
+                <li>Bonne culture ; Instruite</li>
+                <li>Parle couramment Anglais & Français</li>
+                <li>HTML5, CSS3, Sass, TailwindCSS</li>
+                <li>Responsive Web Design, UI/UX</li>
+                <li>JavaScript ES6+, React & Redux, React Native, TypeScript</li>
+                <li>Node.js, Axios, Express, EJS</li>
+                <li>PostgreSQL & MongoDB</li>
+                <li>Linux, Git flow & GitHub</li>
+                <li>Webpack, Vite</li>
+                <li>Netlify, Heroku, Clever Cloud</li>
+                <li>Electron</li>
+              </ul>
+            </article>
+            <article>
+              <h2>J&apos;AIME...</h2>
+              <div className="hobbies">
+                <p className="tag tag--yellow">Dessiner & peindre</p>
+                <p className="tag tag--blue">La photographie</p>
+                <p className="tag tag--pink">La nature & les animaux</p>
+                <p className="tag tag--orange">Courir</p>
+                <p className="tag tag--lavender">Les jeux vidéos</p>
+                <p className="tag tag--sun">Lire un bon livre</p>
+                <p className="tag tag--sand">Cuisiner et pâtisser</p>
+                <p className="tag tag--beige">Witchy things</p>
+              </div>
+            </article>
+            <article>
+              <h2>CONTACT</h2>
+              <div className="contact">
+                <Image width="100" height="100" src={sakura} alt="sakura tree icon" />
+                <ul>
+                  <li>
+                    <a href="mailto:chloe.danisevicius@gmail.com">chloe.danisevicius@gmail.com</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/SpookyUmi" target="_blank" rel="noopener noreferrer">
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/spookyumi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://spookyumi.dev" target="_blank" rel="noopener noreferrer">
+                      Mon ancien site web
+                    </a>{" "}
+                    (Je travaille sur le nouveau)
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+        </>
+      )}
     </div>
   );
 }

@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-.main h1 {
+h1 {
   text-align: center;
 }
 
@@ -175,4 +175,21 @@
   .second {
     display: block;
   }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.117);
+  background-color: vars.$color-lavender;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(110%);
 }
