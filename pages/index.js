@@ -334,10 +334,10 @@ export default function Home() {
               <div className="hobbies">
                 <p className="tag tag--yellow">Dessiner & peindre</p>
                 <p className="tag tag--blue">La photographie</p>
-                <p className="tag tag--pink">La nature & les animaux</p>
+                <p className="tag tag--pink">La nature</p>
                 <p className="tag tag--orange">Courir</p>
                 <p className="tag tag--lavender">Les jeux vidéos</p>
-                <p className="tag tag--sun">Lire un bon livre</p>
+                <p className="tag tag--sun">Lire</p>
                 <p className="tag tag--sand">Cuisiner et pâtisser</p>
                 <p className="tag tag--beige">Witchy things</p>
               </div>
